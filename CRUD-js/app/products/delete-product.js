@@ -28,7 +28,7 @@ $(document).ready(function () {
             data: JSON.stringify({ id: product_id }),
             success: function (result) {
               // re-load list of products
-              showProducts();
+              showProductsFirstPage();
             },
             error: function (xhr, resp, text) {
               console.log(xhr, resp, text);
